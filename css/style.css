@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -81,7 +81,7 @@ nav ul li a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-size: 4em;
 }
@@ -91,7 +91,7 @@ nav ul li a {
   top: 58%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-size: 2.6em;
 }
@@ -141,5 +141,4 @@ nav ul li a {
 h1 {
   font-size: 5em;
 }
-
 /*# sourceMappingURL=style.css.map */
