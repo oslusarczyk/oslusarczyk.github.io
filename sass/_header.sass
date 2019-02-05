@@ -5,7 +5,8 @@ nav
     left: 0
     width: 100vw
     height: 7vh
-    background: #fff
+    &.active
+        background-color: white
     ul
         list-style: none
         li
@@ -35,10 +36,11 @@ nav
                 text-transform: uppercase
                 text-decoration: none
                 color: black
+
 .background
     width: 100vw
     height: 100vh
-    background-color: rgba(0,100,255,0.4)
+    background-color: #eee
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -58,4 +60,4 @@ nav
         left: 50%
         transform: translate(-50%,-50%)
         text-transform: uppercase
-        font-size: 2em
+        font-size: 2.6em
