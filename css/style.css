@@ -2,8 +2,14 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 nav {
@@ -12,7 +18,10 @@ nav {
   left: 0;
   width: 100vw;
   height: 7vh;
-  background: #fff;
+}
+
+nav.active {
+  background-color: white;
 }
 
 nav ul {
@@ -58,7 +67,7 @@ nav ul li a {
 .background {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 100, 255, 0.4);
+  background-color: #eee;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -72,7 +81,7 @@ nav ul li a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-size: 4em;
 }
@@ -82,13 +91,13 @@ nav ul li a {
   top: 58%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 2.6em;
 }
 
 .aboutme {
-  margin: 3vh auto 3vh;
+  margin: 7vh auto 7vh;
   padding: 50px;
   text-transform: uppercase;
   text-align: center;
@@ -100,7 +109,37 @@ nav ul li a {
 }
 
 .aboutme p {
-  font-size: 3.5em;
-  line-height: 50px;
+  margin: 30px;
+  font-size: 3em;
+  line-height: 55px;
 }
+
+.skills {
+  background-color: #eee;
+  margin: 7vh auto 7vh;
+  padding: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.skills .skill {
+  padding: 3vh;
+  width: 25%;
+  float: left;
+}
+
+.skills .skill img {
+  height: 35vh;
+}
+
+.skills .skill h2 {
+  padding: 1vh;
+  text-align: center;
+  font-size: 2.8em;
+}
+
+h1 {
+  font-size: 5em;
+}
+
 /*# sourceMappingURL=style.css.map */
