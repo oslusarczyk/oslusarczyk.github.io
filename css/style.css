@@ -18,6 +18,8 @@ nav {
   left: 0;
   width: 100vw;
   height: 7vh;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
 }
 
 nav.active {
@@ -68,11 +70,6 @@ nav ul li a {
   width: 100vw;
   height: 100vh;
   background-color: #eee;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: hidden;
   position: relative;
 }
 
@@ -97,7 +94,7 @@ nav ul li a {
 }
 
 .aboutme {
-  margin: 7vh auto 7vh;
+  margin: 4vh auto 7vh;
   padding: 50px;
   text-transform: uppercase;
   text-align: center;
@@ -109,7 +106,7 @@ nav ul li a {
 }
 
 .aboutme p {
-  margin: 30px;
+  margin: 20px;
   font-size: 3em;
   line-height: 55px;
 }
@@ -138,7 +135,62 @@ nav ul li a {
   font-size: 2.8em;
 }
 
-h1 {
+.skills h1 {
   font-size: 5em;
+}
+
+.portfolios {
+  margin: 4vh auto 4vh;
+  padding: 3vh;
+  text-transform: uppercase;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolios h1 {
+  display: block;
+  font-size: 5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolios #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.portfolios #container .portfolio {
+  padding: 2vh;
+  margin: 1vh;
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+  background-color: #ddd;
+}
+
+.portfolios #container .portfolio img {
+  width: 100%;
+  background-color: white;
+  padding: 0;
+}
+
+.portfolios #container .portfolio .text a {
+  margin: 2vh 0;
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  font-size: 2.4em;
+  border-bottom: 3px solid red;
+}
+
+.portfolios #container .portfolio .text p {
+  margin-top: 3vh;
+  font-size: 1.5em;
+  text-align: left;
+  line-height: 50px;
 }
 /*# sourceMappingURL=style.css.map */
