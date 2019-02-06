@@ -12,4 +12,4 @@ const animation = () => {
     if (index == 23) clearInterval(indexInterval);
 
 }
-const indexInterval = setInterval(animation, 250)
+const indexInterval = setInterval(animation, 10)
