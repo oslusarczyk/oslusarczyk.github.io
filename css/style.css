@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 
 .clearfix::after {
@@ -78,7 +79,7 @@ nav ul li a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-size: 4em;
 }
@@ -88,7 +89,7 @@ nav ul li a {
   top: 58%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-size: 2.6em;
 }
@@ -98,15 +99,14 @@ nav ul li a {
   padding: 50px;
   text-transform: uppercase;
   text-align: center;
-  height: 40vh;
 }
 
 .aboutme h1 {
-  font-size: 5em;
+  font-size: 6em;
 }
 
 .aboutme p {
-  margin: 20px;
+  margin-top: 2.5vh;
   font-size: 3em;
   line-height: 55px;
 }
@@ -145,15 +145,15 @@ nav ul li a {
   text-transform: uppercase;
   text-align: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .portfolios h1 {
   display: block;
   font-size: 5em;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .portfolios #container {
@@ -161,15 +161,15 @@ nav ul li a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .portfolios #container .portfolio {
   padding: 2vh;
   margin: 1vh;
   -ms-flex-preferred-size: 24%;
-      flex-basis: 24%;
-  background-color: #ddd;
+  flex-basis: 24%;
+  background-color: #eee;
 }
 
 .portfolios #container .portfolio img {
@@ -179,12 +179,13 @@ nav ul li a {
 }
 
 .portfolios #container .portfolio .text a {
-  margin: 2vh 0;
   display: block;
+  margin: 2vh 0;
   text-decoration: none;
   text-align: right;
   font-size: 2.4em;
   border-bottom: 3px solid red;
+  color: black;
 }
 
 .portfolios #container .portfolio .text p {
@@ -193,4 +194,92 @@ nav ul li a {
   text-align: left;
   line-height: 50px;
 }
+
+.contact {
+  background-color: #eee;
+  margin: 4vh auto 0;
+  padding: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  min-height: 10vh;
+}
+
+.contact h1 {
+  font-size: 5em;
+}
+
+.contact .form {
+  margin-top: 2vh;
+  width: 50%;
+  float: left;
+}
+
+.contact .form input {
+  display: block;
+  margin: 10px auto 3vh;
+  line-height: 35px;
+  height: 6vh;
+  font-size: 2em;
+  width: 80%;
+  margin-bottom: 1vh;
+}
+
+.contact .form textarea {
+  display: block;
+  margin: 0 auto;
+  line-height: 35px;
+  height: 25vh;
+  font-size: 2.3em;
+  width: 80%;
+  margin-bottom: 1vh;
+  background-color: white;
+}
+
+.contact .form button {
+  display: block;
+  margin: 0 auto;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-size: 2em;
+  width: 50%;
+  margin-bottom: 1vh;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  text-transform: uppercase;
+}
+
+.contact .form button:hover {
+  color: white;
+  background-color: black;
+}
+
+.contacts {
+  width: 50%;
+}
+
+.contacts .socials {
+  margin: 10px;
+  padding: 3vh;
+}
+
+.contacts .socials img {
+  float: left;
+}
+
+.contacts .socials p {
+  line-height: 72px;
+  padding-left: 5vh;
+  font-size: 2em;
+  float: left;
+}
+
+footer {
+  height: 5vh;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  line-height: 5vh;
+}
+
 /*# sourceMappingURL=style.css.map */
