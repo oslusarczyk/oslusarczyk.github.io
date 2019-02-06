@@ -3,7 +3,6 @@
     padding: 3vh 
     text-transform: uppercase
     text-align: center
-    flex-wrap: wrap
     h1
         display: block
         font-size: 5em
@@ -11,10 +10,11 @@
     #container
         display: flex
         justify-content: space-around
+        flex-wrap: wrap
         .portfolio
             padding: 2vh 
             margin: 1vh
-            flex-basis: 24%
+            flex-basis: 22%
             background-color: #eee
             img
                 width: 100%
@@ -35,3 +35,73 @@
                     font-size: 1.5em
                     text-align: left
                     line-height: 50px
+@media( max-width: 1025px)
+    .portfolios
+        h1
+            font-size: 4.5em
+        #container
+            .portfolio
+                flex-basis: 48%
+                img
+                .text
+                    a   
+                        font-size: 1.6em
+                    p
+                        font-size: 1.2em
+
+@media( max-width: 1025px)
+    .portfolios
+        h1
+            font-size: 4.5em
+        #container
+            .portfolio
+                flex-basis: 48%
+                img
+                .text
+                    a   
+                        font-size: 1.6em
+                    p
+                        font-size: 1.2em
+
+@media( max-width: 768px)
+    .portfolios
+        h1
+            font-size: 4.2em
+        #container
+            .portfolio
+                flex-basis: 80%
+                img
+                .text
+                    a   
+                        font-size: 2em
+                    p
+                        font-size: 1.7em
+
+@media( max-width: 420px)
+    .portfolios
+        h1
+            font-size: 3.6em
+        #container
+            .portfolio
+                flex-basis: 90%
+                img
+                .text
+                    a   
+                        font-size: 1.8em
+                    p
+                        font-size: 1.4em
+
+@media( max-width: 385px)
+    .portfolios
+        h1
+            font-size: 3.5em
+        #container
+            .portfolio
+                flex-basis: 90%
+                img
+                .text
+                    a   
+                        font-size: 1.6em
+                    p
+                        font-size: 1.2em
+
