@@ -1,8 +1,12 @@
 .portfolios
+    opacity: 0
     margin: 4vh auto 4vh
     padding: 3vh 
     text-transform: uppercase
     text-align: center
+    transition: .3s linear
+    &.active
+        opacity: 1
     h1
         display: block
         font-size: 5em
@@ -19,8 +23,7 @@
             img
                 width: 100%
                 background-color: white
-                padding: 0
-                
+                padding: 0        
             .text
                 a              
                     display: block
@@ -34,7 +37,9 @@
                     margin-top: 3vh
                     font-size: 1.5em
                     text-align: left
-                    line-height: 50px
+                    line-height: 50px  
+   
+    
 @media( max-width: 1025px)
     .portfolios
         h1

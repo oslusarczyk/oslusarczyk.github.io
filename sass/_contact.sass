@@ -1,10 +1,12 @@
 .contact
+    opacity: 0
     background-color: #eee
     margin: 4vh auto 0
     padding: 50px
     text-transform: uppercase
     text-align: center
     min-height: 10vh
+    transition: .3s linear
     h1
         font-size: 5em        
     .form
@@ -44,6 +46,8 @@
             &:hover
                 color: white
                 background-color: black
+    &.active
+        opacity: 1
 .contacts
     width: 50%
     .socials
@@ -56,6 +60,7 @@
             padding-left: 5vh
             font-size: 1.8em
             float: left
+    
 
 @media (max-width: 1500px)
     .contact

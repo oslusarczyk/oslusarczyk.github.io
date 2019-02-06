@@ -278,10 +278,17 @@ nav ul li a {
 }
 
 .aboutme {
+  opacity: 0;
   margin: 4vh auto 7vh;
   padding: 50px;
   text-transform: uppercase;
   text-align: center;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.aboutme.active {
+  opacity: 1;
 }
 
 .aboutme h1 {
@@ -462,10 +469,17 @@ nav ul li a {
 }
 
 .portfolios {
+  opacity: 0;
   margin: 4vh auto 4vh;
   padding: 3vh;
   text-transform: uppercase;
   text-align: center;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.portfolios.active {
+  opacity: 1;
 }
 
 .portfolios h1 {
@@ -598,12 +612,15 @@ nav ul li a {
 }
 
 .contact {
+  opacity: 0;
   background-color: #eee;
   margin: 4vh auto 0;
   padding: 50px;
   text-transform: uppercase;
   text-align: center;
   min-height: 10vh;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .contact h1 {
@@ -654,6 +671,10 @@ nav ul li a {
 .contact .form button:hover {
   color: white;
   background-color: black;
+}
+
+.contact.active {
+  opacity: 1;
 }
 
 .contacts {
