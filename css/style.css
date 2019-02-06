@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
 }
@@ -79,7 +79,7 @@ nav ul li a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-size: 4em;
 }
@@ -89,7 +89,7 @@ nav ul li a {
   top: 58%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-size: 2.6em;
 }
@@ -145,15 +145,15 @@ nav ul li a {
   text-transform: uppercase;
   text-align: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .portfolios h1 {
   display: block;
   font-size: 5em;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolios #container {
@@ -161,14 +161,14 @@ nav ul li a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .portfolios #container .portfolio {
   padding: 2vh;
   margin: 1vh;
   -ms-flex-preferred-size: 24%;
-  flex-basis: 24%;
+      flex-basis: 24%;
   background-color: #eee;
 }
 
@@ -270,7 +270,7 @@ nav ul li a {
 .contacts .socials p {
   line-height: 72px;
   padding-left: 5vh;
-  font-size: 2em;
+  font-size: 1.8em;
   float: left;
 }
 
@@ -281,5 +281,4 @@ footer {
   text-transform: uppercase;
   line-height: 5vh;
 }
-
 /*# sourceMappingURL=style.css.map */
