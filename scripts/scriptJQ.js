@@ -26,7 +26,7 @@ $(window).scroll(function () {
     const aboutmeFromTop = $aboutme.offset().top
     const aboutmeHeight = $aboutme.outerHeight()
 
-    if (scroll > aboutmeFromTop + aboutmeHeight - windowHeight) {
+    if (scroll > aboutmeFromTop + aboutmeHeight - windowHeight - 300) {
         $aboutme.addClass("active");
     }
 
@@ -34,7 +34,7 @@ $(window).scroll(function () {
     const contactFromTop = $contact.offset().top
     const contactHeight = $contact.outerHeight()
 
-    if (scroll > contactFromTop + contactHeight - windowHeight) {
+    if (scroll > contactFromTop + contactHeight - windowHeight - 100) {
         $contact.addClass("active");
     }
 });

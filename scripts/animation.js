@@ -1,7 +1,6 @@
 const text = 'front-end web developer'
 const paragraph = document.querySelector(".background p")
 
-const textIndex = [...text]
 
 let index = 0;
 
