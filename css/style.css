@@ -34,7 +34,6 @@ nav ul {
 nav ul li {
   float: right;
   padding: 10px;
-  display: inline-block;
   width: 15vw;
   position: relative;
   overflow: hidden;
