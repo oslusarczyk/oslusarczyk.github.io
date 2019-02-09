@@ -21,7 +21,6 @@ nav {
   width: 100vw;
   -webkit-transition: .3s linear;
   transition: .3s linear;
-  font-size: 0;
 }
 
 nav.active {
@@ -32,7 +31,6 @@ nav.active {
 
 nav ul {
   list-style: none;
-  font-size: 1.6em;
 }
 
 nav ul li {
