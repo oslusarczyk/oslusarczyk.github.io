@@ -1,5 +1,5 @@
 const burger = document.querySelector(".hamburger");
-const activeElement = document.querySelectorAll(".active");
+const activeElement = document.querySelectorAll(".active1");
 
 
 burger.addEventListener("click", function () {
