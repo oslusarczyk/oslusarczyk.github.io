@@ -2,9 +2,9 @@ $(window).scroll(function () {
     const scroll = $(window).scrollTop();
     const windowHeight = $(window).height()
     if (scroll >= 310) {
-        $("header nav").addClass("active");
+        $("header nav.desktop").addClass("active");
     } else {
-        $("header nav").removeClass("active");
+        $("header nav.desktop").removeClass("active");
     }
 
     const $skills = $('.skills');
