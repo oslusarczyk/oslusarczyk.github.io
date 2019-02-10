@@ -223,12 +223,6 @@ i.fas {
   }
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-  i.fas {
-    position: fixed;
-  }
-}
-
 .aboutme {
   opacity: 0;
   margin: 4vh auto 7vh;
