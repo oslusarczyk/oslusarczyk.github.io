@@ -149,6 +149,7 @@ i.fas {
     top: 3%;
     right: 5%;
     display: none;
+    color: black;
   }
   i.show {
     display: block;
