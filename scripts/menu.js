@@ -7,9 +7,3 @@ burger.addEventListener("click", function () {
         activeElement[i].classList.toggle("show")
     }
 })
-
-// burger.addEventListener("click", function () {
-//     for (let i = 0; i < activeElement.length; i++) {
-//         activeElement[i].classList.remove
-//     }
-// })
