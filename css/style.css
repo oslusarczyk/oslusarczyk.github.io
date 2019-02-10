@@ -13,7 +13,7 @@
   clear: both;
 }
 
-nav {
+nav.desktop {
   position: fixed;
   top: 0;
   left: 0;
@@ -22,17 +22,17 @@ nav {
   transition: .3s linear;
 }
 
-nav.active {
+nav.desktop.active {
   background-color: white;
   -webkit-box-shadow: 0 1px  10px black;
           box-shadow: 0 1px  10px black;
 }
 
-nav ul {
+nav.desktop ul {
   list-style: none;
 }
 
-nav ul li {
+nav.desktop ul li {
   float: right;
   padding: 10px;
   margin: 5px 25px;
@@ -41,7 +41,7 @@ nav ul li {
   overflow: hidden;
 }
 
-nav ul li::after {
+nav.desktop ul li::after {
   content: "";
   position: absolute;
   bottom: 10%;
@@ -53,18 +53,26 @@ nav ul li::after {
   transition: 0.3s linear;
 }
 
-nav ul li:hover::after {
+nav.desktop ul li:hover::after {
   bottom: 10%;
   left: 0;
 }
 
-nav ul li a {
+nav.desktop ul li a {
   text-align: center;
   display: block;
   font-size: 1.8em;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+}
+
+nav.mobile {
+  display: none;
+}
+
+i.fas {
+  display: none;
 }
 
 .background {
@@ -94,191 +102,120 @@ nav ul li a {
   font-size: 2.6em;
 }
 
-@media (max-width: 1500px) {
-  nav ul li {
-    margin: 25px 5px;
-    width: 18vw;
-  }
-  nav ul li a {
-    font-size: 1.6em;
-  }
-}
-
 @media (max-width: 1280px) {
-  nav ul li a {
-    font-size: 1.4em;
-  }
-  .background h1 {
-    font-size: 3.5em;
-  }
-  .background p {
-    font-size: 2.1em;
-  }
-}
-
-@media (max-width: 1120px) {
-  nav ul li {
-    width: 20vw;
+  nav.desktop ul li a {
+    font-size: 0.9em;
   }
   .background h1 {
     font-size: 3em;
   }
   .background p {
-    font-size: 1.7em;
+    font-size: 1.8em;
   }
 }
 
 @media (max-width: 1000px) {
-  nav ul li {
+  nav.desktop ul li {
     width: 20vw;
   }
-  nav ul li a {
-    font-size: 1.2em;
+  nav.desktop ul li a {
+    font-size: 0.8em;
   }
   .background h1 {
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
   .background p {
-    top: 60%;
-    font-size: 1.7em;
+    top: 55%;
+    font-size: 1.4em;
   }
 }
 
-@media (max-width: 900px) {
-  nav ul li {
-    width: 22vw;
-  }
-  nav ul li a {
-    font-size: 1.1em;
-  }
+@media (max-width: 640px) {
   .background h1 {
-    font-size: 2.8em;
+    font-size: 0.8em;
   }
   .background p {
-    font-size: 1.7em;
+    top: 55%;
+    font-size: 0.65em;
   }
 }
 
-@media (max-width: 700px) {
-  nav ul li {
-    width: 23vw;
+@media (max-width: 960px) {
+  nav.desktop {
+    display: none;
   }
-  nav ul li a {
-    font-size: 1em;
+  i.fas {
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    display: none;
   }
-  .background h1 {
+  i.show {
+    display: block;
     font-size: 2.8em;
   }
-  .background p {
-    font-size: 1.7em;
+  nav.mobile {
+    display: block;
+    position: fixed;
+    background-color: rgba(238, 238, 238, 0.99);
+    right: 0;
+    top: -100%;
+    height: 30vh;
+    width: 100%;
   }
-}
-
-@media (max-width: 600px) {
-  nav ul li {
-    width: 23vw;
+  nav.mobile ul {
+    margin-top: 1vh;
+    list-style: none;
   }
-  nav ul li a {
-    font-size: 0.9em;
+  nav.mobile ul li {
+    padding: 10px;
   }
-  .background h1 {
-    font-size: 2.8em;
+  nav.mobile ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    height: 5vh;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: black;
   }
-  .background p {
-    font-size: 1.7em;
+  nav.mobile.show {
+    top: 0;
   }
 }
 
 @media (max-width: 500px) {
-  nav ul li {
-    width: 20vw;
-  }
-  nav ul li a {
-    font-size: 0.5em;
-  }
-  .background h1 {
-    font-size: 2.8em;
-  }
-  .background p {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 420px) {
-  nav ul li {
-    width: 22vw;
-  }
-  nav ul li a {
-    font-size: 0.5em;
-  }
-  .background h1 {
+  nav.mobile ul li a {
+    height: 4vh;
     font-size: 1.2em;
   }
-  .background p {
-    font-size: 0.8em;
+  i.show {
+    font-size: 2.2em;
   }
 }
 
 @media (max-width: 385px) {
-  nav ul li {
-    width: 22vw;
-  }
-  nav ul li a {
-    font-size: 0.55em;
-  }
-  .background h1 {
-    font-size: 1.1em;
-  }
-  .background p {
-    font-size: 0.7em;
-  }
-}
-
-@media (max-width: 376px) {
-  nav ul li {
-    margin: 5px 1px;
-    width: 22vw;
-  }
-  nav ul li a {
-    font-size: 0.47em;
-  }
-  .background h1 {
-    font-size: 1.1em;
-  }
-  .background p {
-    font-size: 0.8em;
-  }
-}
-
-@media (max-width: 361px) {
-  nav ul li {
-    margin: 5px 1px;
-    width: 23vw;
-  }
-  nav ul li a {
-    font-size: 0.5em;
-  }
-  .background h1 {
+  nav.mobile ul li a {
+    height: 4vh;
     font-size: 1em;
   }
-  .background p {
-    font-size: 0.7em;
+  i.show {
+    font-size: 1.7em;
   }
 }
 
-@media (max-width: 321px) {
-  nav ul li {
-    margin: 5px 1px;
-    width: 22vw;
+@media (max-width: 385px) {
+  nav.mobile ul {
+    margin-top: .5vh;
   }
-  nav ul li a {
-    font-size: 0.4em;
-  }
-  .background h1 {
+  nav.mobile ul li a {
+    height: 4vh;
     font-size: 0.8em;
   }
-  .background p {
-    font-size: 0.6em;
+  i.show {
+    font-size: 1.5em;
   }
 }
 
@@ -475,7 +412,7 @@ nav ul li a {
     font-size: 1.5em;
   }
   .skills h1 {
-    font-size: 2.4em;
+    font-size: 1.5em;
   }
 }
 
@@ -595,7 +532,7 @@ nav ul li a {
 
 @media (max-width: 385px) {
   .portfolios h1 {
-    font-size: 3.5em;
+    font-size: 2.4em;
   }
   .portfolios #container .portfolio {
     -ms-flex-preferred-size: 90%;

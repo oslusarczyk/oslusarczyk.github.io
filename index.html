@@ -18,13 +18,27 @@
             <div class="background">
                 <h1>Oskar Ślusarczyk</h1>
                 <p></p>
-                <nav>
+                <nav class="desktop">
                     <ul>
                         <li><a href="#/" class="menu-contact">Kontakt</a></li>
                         <li><a href="#/" class="menu-portfolios">Portfolio</a></li>
                         <li><a href="#/" class="menu-skills">Umiejętności</a></li>
                         <li><a href="#/" class="menu-aboutme">O mnie</a></li>
                     </ul>
+                </nav>
+
+                <nav class="mobile active">
+                    <ul>
+                        <li><a href="#/" class="mobile-menu-contact">Kontakt</a></li>
+                        <li><a href="#/" class="mobile-menu-examples">Portfolio</a></li>
+                        <li><a href="#/" class="mobile-menu-skills">Umiejętności</a></li>
+                        <li><a href="#/" class="mobile-menu-aboutme">O mnie</a></li>
+                    </ul>
+
+                    <div class="hamburger">
+                        <i class="fas fa-bars show active"></i>
+                        <i class="fas fa-times active"></i>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -131,6 +145,7 @@
     <script src="scripts/animation.js"></script>
     <script src="scripts/scriptJQ.js"></script>
     <script src="scripts/year.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
