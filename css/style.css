@@ -152,13 +152,18 @@ i.fas {
     color: black;
   }
   i.show {
+    position: fixed;
+    top: 3%;
+    right: 5%;
     display: block;
     font-size: 2.8em;
   }
   nav.mobile {
     display: block;
     position: fixed;
-    background-color: rgba(238, 238, 238, 0.99);
+    background-color: rgba(238, 238, 238, 0.5);
+    -webkit-box-shadow: 0 1px 2px black;
+            box-shadow: 0 1px 2px black;
     right: 0;
     top: -100%;
     height: 30vh;
