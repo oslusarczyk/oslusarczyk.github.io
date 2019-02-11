@@ -71,10 +71,6 @@ nav.mobile {
   display: none;
 }
 
-i.fas {
-  display: none;
-}
-
 .background {
   width: 100vw;
   height: 100vh;
@@ -134,17 +130,6 @@ i.fas {
   nav.desktop {
     display: none;
   }
-  i.fas {
-    position: fixed;
-    top: 3%;
-    right: 5%;
-    color: black;
-  }
-  i.show {
-    display: block;
-    font-size: 2.8em;
-    z-index: 9999;
-  }
   nav.mobile {
     display: block;
     position: fixed;
@@ -179,6 +164,26 @@ i.fas {
   nav.mobile.show {
     top: 0;
   }
+  nav.mobile .burger {
+    position: relative;
+    top: 50%;
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+    background-color: red;
+  }
+  nav.mobile .burger img {
+    width: 40px;
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+  }
+  nav.mobile .burger img.show {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
 }
 
 @media (max-width: 640px) {
@@ -188,10 +193,6 @@ i.fas {
   .background p {
     top: 55%;
     font-size: 0.65em;
-  }
-  i.fas {
-    top: 5%;
-    right: 10%;
   }
 }
 
@@ -203,9 +204,8 @@ i.fas {
     height: 4vh;
     font-size: 1.2em;
   }
-  i.show {
-    display: block;
-    font-size: 2.2em;
+  nav.mobile .burger img {
+    width: 35px;
   }
 }
 
@@ -214,9 +214,8 @@ i.fas {
     height: 4vh;
     font-size: 0.8em;
   }
-  i.show {
-    display: block;
-    font-size: 1.5em;
+  nav.mobile .burger img {
+    width: 25px;
   }
 }
 

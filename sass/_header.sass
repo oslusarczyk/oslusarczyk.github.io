@@ -40,9 +40,6 @@ nav.desktop
 nav.mobile
     display: none
 
-i.fas
-    display: none
-
 
 .background
     width: 100vw
@@ -99,18 +96,6 @@ i.fas
     nav.desktop
         display: none
 
-
-    i.fas
-        position: fixed
-        top: 3%
-        right: 5%
-        // display: none
-        color: black
-    i.show
-        display: block
-        font-size: 2.8em
-        z-index: 9999
-
     nav.mobile
         display: block
         position: fixed
@@ -141,13 +126,21 @@ i.fas
             top: 0
 
            
-    // .burger
-    //     position: relative
-    //     top: 50%
-    //     left: 0
-    //     width: 100vw
-    //     height: 20vh
-    //     background-color: red
+        .burger
+            position: relative
+            top: 50%
+            left: 0
+            width: 100vw
+            height: 20vh
+            background-color: red        
+            img
+                width: 40px
+                position: fixed
+                top: 3%
+                right: 5%
+                transition: .3s linear
+                &.show
+                    transform: rotate(90deg)
 
 @media (max-width: 640px)
     .background 
@@ -157,9 +150,6 @@ i.fas
             top: 55%
             font-size:  0.65em
 
-    i.fas
-        top: 5%
-        right: 10%
 
 @media (max-width: 500px)
     nav.mobile
@@ -169,9 +159,10 @@ i.fas
                 a 
                     height: 4vh
                     font-size: 1.2em
-    i.show
-        display: block
-        font-size: 2.2em   
+
+        .burger
+            img
+                width: 35px
 
     
 @media (max-width: 385px)
@@ -181,7 +172,6 @@ i.fas
                 a 
                     height: 4vh
                     font-size: 0.8em
-
-    i.show
-        display: block
-        font-size: 1.5em
+        .burger
+            img
+                width: 25px
