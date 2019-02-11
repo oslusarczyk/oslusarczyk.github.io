@@ -143,6 +143,7 @@ i.fas {
     right: 5%;
     display: none;
     color: black;
+    z-index: 1;
   }
   i.show {
     display: block;
