@@ -1,4 +1,4 @@
-const burger = document.querySelector(".hamburger");
+const burger = document.querySelector(".burger");
 const activeElement = document.querySelectorAll(".active1");
 
 

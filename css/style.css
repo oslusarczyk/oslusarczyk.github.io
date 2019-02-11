@@ -134,14 +134,10 @@ i.fas {
   nav.desktop {
     display: none;
   }
-  .hamburger {
-    width: 100vh;
-  }
   i.fas {
     position: fixed;
     top: 3%;
     right: 5%;
-    display: none;
     color: black;
   }
   i.show {
