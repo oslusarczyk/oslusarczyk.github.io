@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: oslusarczyk.github.io
+Token: e18dde1c1bedc3573b76c5bd6008fb0e07ed45865c645bc3eddc1fbe4bbab209
